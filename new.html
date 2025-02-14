@@ -7,17 +7,78 @@
     <title>Portfolio - Flutter Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .rounded-img {
-            border-radius: 25px;
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
         }
 
-        .padding-bottom {
-            padding-bottom: 20px;
+        .navbar {
+            background-color: #1f1f1f;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #e0e0e0 !important;
+        }
+
+        .nav-link:hover {
+            color: #bb86fc !important;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border: 1px solid #333;
+        }
+
+        .card-title,
+        .card-text {
+            color: #e0e0e0;
+        }
+
+        .btn-secondary {
+            background-color: #bb86fc;
+            border-color: #bb86fc;
+        }
+
+        .btn-secondary:hover {
+            background-color: #9a67ea;
+            border-color: #9a67ea;
+        }
+
+        .btn-outline-primary {
+            color: #bb86fc;
+            border-color: #bb86fc;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #bb86fc;
+            color: #121212;
+        }
+
+        .btn-outline-secondary {
+            color: #03dac6;
+            border-color: #03dac6;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #03dac6;
+            color: #121212;
+        }
+
+        .rounded-img {
+            border-radius: 25px;
+            height: 370px;
+            width: 300px;
         }
 
         .image-container {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .padding-bottom {
+            padding-bottom: 20px;
         }
 
         .nexed-image {
@@ -26,12 +87,81 @@
             padding-left: 5px;
             padding-top: 5px;
         }
+
+        .custom-btn {
+            background-color: #303030;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .custom-btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+
+        .google-btn {
+            background-color: #4285F4; 
+            text-decoration: none;
+            display: inline-block;
+
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .google-btn:hover {
+            background-color: #357ae8;
+       
+        }
+
+        .google-btn:active {
+            background-color: #3367d6;
+           
+        }
+
+        .linked-btn {
+            background-color: white;
+            color: blue;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .linked-btn:hover {
+            background-color: blue;
+            color: white;
+            border: 2px solid #000000;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-secondary text-white">
-
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -41,6 +171,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -54,10 +185,22 @@
                 <p>Hello! I am a passionate <strong>Flutter Developer</strong> with a B.Tech degree in <strong>Computer
                         and Communication Engineering</strong>. I love building cross-platform applications that provide
                     seamless user experiences.</p>
-                <p>With expertise in Flutter, Firebase, Supabase and mobile app development, I create dynamic and
+                <p>With expertise in Flutter, Firebase, Supabase, and mobile app development, I create dynamic and
                     efficient applications tailored to user needs.</p>
-                <a href="https://github.com/Kural002" class="btn btn-secondary">View My Work</a>
-
+                <p>As a Flutter Developer, I focus on crafting modern UI/UX, integrating real-time databases, and
+                    optimizing app performance to ensure smooth functionality across Android and iOS. I have
+                    successfully worked on multiple projects that involve state management, API integration, and
+                    Firebase-based authentication and notifications.</p>
+                <p>In addition to mobile development, I am also a Java Developer, skilled in backend programming,
+                    object-oriented concepts, and data structures. I have experience developing Java-based applications,
+                    including Android apps, RESTful APIs, and enterprise solutions. My knowledge of Spring Boot, SQL,
+                    and data structures & algorithms allows me to build secure and scalable backend systems that
+                    integrate seamlessly with mobile and web applications.</p>
+                <p>I have worked on various projects, including academic apps, weather applications, and career
+                    mentorship platforms, showcasing my ability to design and develop software solutions that solve
+                    real-world problems. My dedication to continuous learning keeps me up to date with the latest
+                    technologies and best practices in software development.</p>
+                <a href="https://github.com/Kural002" class="custom-btn ">View My Work</a>
             </div>
             <div class="col-md-6 padding-bottom image-container">
                 <img src="image/kural.jpg" class="img-fluid rounded-img" alt="Profile Image">
@@ -65,26 +208,26 @@
         </div>
     </div>
 
-    <section id="projects " class="container mt-5">
+    <section id="projects" class="container mt-5">
         <h2 class="text-center text-secondary">Projects</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card ">
-                    <img src="image/nexed.png  " class="card-img-top nexed-image" alt="Project 1">
+                <div class="card">
+                    <img src="image/nexed.png" class="card-img-top nexed-image" alt="Project 1">
                     <div class="card-body">
                         <h5 class="card-title text-secondary">NEXED - College Student Academic Info App</h5>
                         <p class="card-text">NEXED is a mobile application developed in Flutter, designed to help
                             college students manage their academic information efficiently. The app provides features
                             like course tracking, grade management, attendance monitoring, and personalized academic
                             insights. With an intuitive UI and seamless integration with Firebase, NEXED aims to enhance
-                            the student experience by offering a centralized platform for academic data management with
+                            the student experience by offering a centralized platform for academic data management and
                             responsive design and efficient data handling.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="image/cloud.png  " class="card-img-top nexed-image" alt="Project 1">
+                    <img src="image/cloud.png" class="card-img-top nexed-image" alt="Project 2">
                     <div class="card-body">
                         <h5 class="card-title text-secondary">Weather App – Real-Time Weather Updates</h5>
                         <p class="card-text">Developed a weather application in Flutter that provides real-time weather
@@ -98,7 +241,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="image/skill.jpg  " class="card-img-top nexed-image" alt="Project 1">
+                    <img src="image/skill.jpg" class="card-img-top nexed-image" alt="Project 3">
                     <div class="card-body">
                         <h5 class="card-title text-secondary">Career Development E-Mentorship Platform</h5>
                         <p class="card-text">Developed a web-based e-mentorship platform for career development using
@@ -113,17 +256,125 @@
         </div>
     </section>
 
-    <section id="contact" class="container mt-5">
-        <h2 class="text-center text-secondary">Contact Me</h2>
-        <p class="text-center">Feel free to reach out for collaborations or inquiries.</p>
-        <div class="text-center">
-            <a href="mailto:www.kuralarasu2004@gmail.com.com" class="btn btn-outline-primary">Email Me</a>
-            <a href="https://www.linkedin.com/in/kural02/" class="btn btn-outline-secondary"
-                target="_blank">LinkedIn</a>
+    <section id="certifications" class="container mt-5">
+        <h2 class="text-center text-secondary">Certifications</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Flutter Certification – Guvi</h5>
+                        <p class="card-text">Successfully completed a Flutter certification course on Guvi, gaining
+                            experience in developing cross-platform mobile applications. The course covered
+                            essential topics like state management, Firebase integration, and API handling. Developed
+                            multiple projects to apply learned concepts and enhance proficiency in
+                            Flutter and Dart.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Flutter Certification – Udemy</h5>
+                        <p class="card-text">Successfully completed a Flutter certification course on Udemy, gaining
+                            expertise in building cross-platform mobile applications. The course covered state
+                            management, Firebase integration, API handling, and UI/UX design principles. Developed
+                            multiple projects, including real-world applications, to enhance proficiency in Flutter and
+                            Dart.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Full Android Development Masterclass – Udemy</h5>
+                        <p class="card-text">Successfully completed a 46-hour "Full Android Development Masterclass"
+                            course on Udemy. Gained in-depth knowledge of Android development, covering essential topics
+                            like UI/UX design, database integration, API usage, and working with Java/Kotlin. Developed
+                            multiple Android apps during the course to apply learned concepts and enhance proficiency in
+                            building robust Android applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Flutter Zero to Hero 5-Day Bootcamp</h5>
+                        <p class="card-text">Successfully completed the "Flutter Zero to Hero" 5-day bootcamp, gaining
+                            intensive hands-on experience in building cross-platform mobile applications using Flutter.
+                            The bootcamp covered key topics such as Flutter basics, state management, Firebase
+                            integration. Developed practical projects to reinforce learning and achieved proficiency in
+                            creating polished and efficient mobile applications.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="text-center p-4 bg-light mt-5">
+    <section id="internship" class="container mt-5">
+        <h2 class="text-center text-secondary">Internship Experience</h2>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Mobile App Development Intern - Elewayte</h5>
+                        <p class="card-text">During my internship at Elewayte, I had the opportunity to work as a Mobile
+                            App Development Intern, where I focused on building mobile applications using
+                            <strong>Flutter</strong>. I contributed to the development of several features in their
+                            existing mobile apps, including integrating Firebase for data management, improving UI/UX,
+                            and enhancing app performance. I also participated in code reviews, debugging sessions, and
+                            collaborated with cross-functional teams to ensure a seamless development process.
+                        </p>
+                        <p><strong>Technologies used:</strong> XML, Java, Git, Mobile App Development, UI/UX Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Web Development Intern - NLC Learning and Development
+                            Center</h5>
+                        <p class="card-text">During my internship at NLC Learning and Development Center, I worked as a
+                            Web Development Intern, where I contributed to the development of web applications using
+                            <strong>HTML, CSS, Bootstrap, and JavaScript</strong>. My role involved building responsive
+                            web pages, integrating forms, improving user interface components, and optimizing website
+                            performance. I also collaborated with senior developers to ensure the quality of the code
+                            and the usability of the platform.
+                        </p>
+                        <p><strong>Technologies used:</strong> HTML, CSS, Bootstrap, JavaScript, Web Development,
+                            Responsive Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Flutter Developer Intern - Routebus</h5>
+                        <p class="card-text">I worked as a Flutter Developer Intern at Routebus, where I developed and
+                            maintained features for their mobile application. My tasks included implementing new
+                            features, optimizing app performance, and fixing bugs in the existing app. I used
+                            <strong>Flutter</strong> and <strong>Firebase</strong> to create an efficient and
+                            user-friendly app that enhances the commuter experience by providing real-time bus tracking,
+                            route information, and notifications. I worked remotely and participated in regular online
+                            team meetings and code reviews to ensure code quality and collaboration.
+                        </p>
+                        <p><strong>Technologies used:</strong> Flutter, Subapase, Dart, Mobile App Development, API
+                            integration , Real-time Features</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center text-secondary">Contact Me</h2>
+        <p class="text-center">Feel free to reach out for collaborations or inquiries.</p>
+        <div class="text-center py-5 ">
+            <a href="https:www.kuralarasu2004@gmail.com" class="google-btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/kural02/" class="linked-btn" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer class="text-center p-4">
         &copy; 2025 My Portfolio. All Rights Reserved.
     </footer>
 
